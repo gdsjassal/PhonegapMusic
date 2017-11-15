@@ -87,7 +87,7 @@
         // Set audio position
         //
         function setAudioPosition(position) {
-            document.getElementById('audio_position').value = position;
+            document.getElementById('audio_position').innerHtml = position;
         }
 
     </script>
@@ -104,8 +104,9 @@
     </button>
     <!--<a href="#" class="btn large" onclick="pauseAudio();"><i class="fa fa-pause-circle-o fa-6" aria-hidden="true"></i></a>
     <a href="#" class="btn large" onclick="stopAudio();"><i class="fa fa-stop-circle-o fa-6" aria-hidden="true"></i></a>-->
-    <p>
+    <!--<p>
         <input type="range" name="audio_position" id="audio_position" data-highlight="true" min="0" max="155" value="0">
-    </p>
+    </p>-->
+    <p id="audio_position"></p>
 </body>
 </html>
